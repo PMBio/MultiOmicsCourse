@@ -16,8 +16,17 @@ This course provides insights into the foundations and principles of multi-omics
 ## Prerequisites:
 
 * Experience in Python programming, and the use of bash.
-* Access to a Linux/Mac OS machine for practicals
+* Access to a Linux/Mac/Windows OS machine for practicals
 
+## Downloads
+* Day 1:
+* Day 2
+* Day 3
 
-##Optional
+# Environments
+* Day 1:
+* Day 2:
+* Day 3:
+
+## Optional
 VM: 
