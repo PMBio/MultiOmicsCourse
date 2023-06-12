@@ -1,0 +1,78 @@
+# Single Cell Course 2023 - Day 4 practical
+Author: Luca Marconato, Ilia Kats
+
+## installation
+We will work in Python, so you should have a Python environment and ideally Jupyter Notebook or Jupyter Lab installed.
+On Windows and Mac, a Conda environment is probably the easiest option, while on Linux, we found plain virtualenvs (or even no virtual environment at all) to work best.
+
+You will need the following packages from your repository of choice (PyPi/Conda/your Linux distribution's packages):
+
+* `numpy`
+* `scipy`
+* `pandas`
+* `matplotlib`
+* `seaborn`
+* `jupyter`
+* `anndata`
+* `napari`
+* `PyQt5`
+* `mofapy2`
+* `scanpy`
+* `muon`
+* `cell2location`
+
+You will also need the development versions of some packages.
+These need to be installed with `pip`/`pip3`, even in a Conda environment, using `pip install git+repository_url`
+
+* `SpatialDE`: https://github.com/ilia-kats/SpatialDE
+* `mofax`: https://github.com/bioFAM/mofax
+* `spatialdata`: https://github.com/scverse/spatialdata
+* `spatialdata-io`: https://github.com/ilia-kats/spatialdata-io
+* `spatialdata-plot`: https://github.com/scverse/spatialdata-plot
+* `napari-spatialdata`: https://github.com/scverse/napari-spatialdata with the `spatialdata` branch. Use `pip install git+https://github.com/scverse/napari-spatialdata@spatialdata`
+* `napari-matplotlib`: https://github.com/matplotlib/napari-matplotlib
+
+If you're using Python 3.11, you will also need to either install napari from git or manually apply [this patch](https://github.com/napari/napari/pull/5482/files) to your napari installation.
+
+---
+
+### using Conda
+Either [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) or [anaconda](https://docs.anaconda.com/anaconda/install/) is required, with Python >= 3.7.
+If you didn't just install the latest version of conda you may encounter errors.
+In such a case please update miniconda/anaconda (e.g. by running `conda update --all`) or install the latest version.
+Open a terminal and create a conda environment with all the required libraries by running  `conda create -n day4 python==3.10 numpy scipy pandas matplotlib seaborn anndata napari notebook scanpy -c anaconda -c conda-forge -c bioconda`.
+
+If you encounter errors you can try
+
+* Updading conda and then trying again the command above; to update conda use
+* From the message error that you get, find the package that is issuing the error, remove that package from the command line shown above and run again the command.
+When you don't get any more errors install the left-out packages with pip (the specific pip command is package dependent, please search online)
+
+Finally, activate the conda environment with `conda activate day4` and install additional packages with `pip` as described above.
+#### Speeding up things with Mamba
+A trick to speed up the creating of conda environment and the installation of conda packages is to use mamba for the those tasks. Then you can continue using conda normally for activating the env, deleting it, etc..
+
+#### Complete code 
+Run this from your `base` conda environment for installing mamba:
+`conda install -c conda-forge mamba`
+
+Then run the create command by replacing `conda` with `mamba`:
+`mamba create -n day4 python==3.10 numpy scipy pandas matplotlib seaborn anndata napari notebook scanpy -c anaconda -c conda-forge -c bioconda`
+
+Proceed as normally.
+`conda activate day4`
+
+### using virtualenv
+First, install the `virtualenv` package globally.
+You may do so with `pip` or from your Linux distribution's repositories.
+Create a virtual environment with `virtualenv --system-site-packages day4`.
+This will create a virtual environment that will use your system's default Python interpreter and also have access to globally installed Python packages.
+Activate the environment with `source day4/bin/activate`.
+You can now install packages into the environment with `pip install package_name`.
+
+If Jupyter is installed globally (e.g. from your distribution's repositories), you need to enable it to see your new virtual environment.
+Run `python -m ipykernel install --user --name=practical` from within the virtual environment to do that.
+
+### installing globally
+Use `pip install package_name`.
+This will install packages into your user directory, but without isolating different projects from each other.
