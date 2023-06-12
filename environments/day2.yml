@@ -1,0 +1,14 @@
+name: ml
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - leidenalg
+  - scanpy
+  - python-igraph
+  - pandas
+  - scikit-learn
+  - ipykernel
+  - umap-learn
+  - tsne
+

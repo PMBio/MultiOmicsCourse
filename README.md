@@ -25,7 +25,7 @@ This course provides insights into the foundations and principles of multi-omics
 
 # Environments
 * Day 1:
-* Day 2:(environment-day2)[env/day2.yml]
+* Day 2:(environment-day2)[environments/day2.yml]
 * Day 3:
 
 ## Optional
