@@ -1,0 +1,23 @@
+name: sc_course
+channels:
+  - conda-forge
+  - default
+  - bioconda
+dependencies:
+  - ipywidgets
+  - seaborn
+  - scanpy
+  - pytorch
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - jupyterlab
+  - scanpy
+  - celltypist
+  - scvi-tools
+  - scarches
+  - bbknn
+  - pandas
+  - scvelo
+  - muon
+  - mofax
