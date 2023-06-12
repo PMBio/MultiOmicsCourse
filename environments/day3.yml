@@ -1,0 +1,14 @@
+name: mocourse
+channels:
+  - defaults
+dependencies:
+  - pyro-ppl
+  - ipywidgets
+  - scanpy
+  - scikit-learn
+  - seaborn
+  - pytorch
+  - matplotlib
+  - numpy
+  - jupyterlab
+  - pandas
