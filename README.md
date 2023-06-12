@@ -19,12 +19,12 @@ This course provides insights into the foundations and principles of multi-omics
 * Access to a Linux/Mac/Windows OS machine for practicals
 
 ## Downloads
-* Day 1:
+* Day 1: Please [download](https://drive.google.com/drive/folders/17sufCcvtCAbaBn5MfKr5ZxWdz2ilXL51?usp=drive_link) the folder and run the first notebook to download the datasets.  (this is cloned from [here](https://github.com/NBISweden/workshop-scRNAseq).)
 * Day 2:
 * Day 3: TBD
 
 # Environments
-* Day 1:
+* Day 1: [environment-day1](environments/day1.yml)
 * Day 2: [environment-day2](environments/day2.yml)
 * Day 3: [environment-day3](environments/day3.yml)
 
