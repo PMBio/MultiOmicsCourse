@@ -24,10 +24,10 @@ You will need the following packages from your repository of choice (PyPi/Conda/
 You will also need the development versions of some packages.
 These need to be installed with `pip`/`pip3`, even in a Conda environment, using `pip install git+repository_url`
 
-* `SpatialDE`: https://github.com/ilia-kats/SpatialDE
+* `SpatialDE`: https://github.com/PMBio/SpatialDE
 * `mofax`: https://github.com/bioFAM/mofax
 * `spatialdata`: https://github.com/scverse/spatialdata
-* `spatialdata-io`: https://github.com/ilia-kats/spatialdata-io
+* `spatialdata-io`: https://github.com/scverse/spatialdata-io
 * `spatialdata-plot`: https://github.com/scverse/spatialdata-plot
 * `napari-spatialdata`: https://github.com/scverse/napari-spatialdata with the `spatialdata` branch. Use `pip install git+https://github.com/scverse/napari-spatialdata@spatialdata`
 * `napari-matplotlib`: https://github.com/matplotlib/napari-matplotlib
