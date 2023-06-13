@@ -31,4 +31,15 @@ This course provides insights into the foundations and principles of multi-omics
 * Day 4: 
 
 ## Optional
-VM:
+### VM
+In case you don't manage to set everything up on your own computer, we have prepared a Linux virtual machine that has all the packages you need.
+This is intended purely as a last resort, since it adds quite a bit of RAM and CPU overhead.
+You can download it [here](https://drive.google.com/file/d/1-9iBqS1XzWvGqPUxMfsoi4Gk-f-fE4GB/view?usp=sharing).
+The image is in VirtualBox format, but you can also use it with QEMU.
+
+To run QEMU on an Intel/AMD host, use `qemu-system-x86_64 -enable-kvm -m 8G -cpu host -vga qxl -hda vm.vdi` which runs the VM with 8 GB RAM and 1 CPU.
+Add `-smp 2` to give it 2 cores.
+On a Windows host, replace `-enable-kvm` with `-enable-hax`.
+
+QEMU can also emulate x86 hardware on Apple Silicon, but in that case no hardware virtualization is available, so it will be very slow. Try something like:
+`qemu-system-x86_64 -m 8G -cpu max -hda vm.vdi -vga qxl`
