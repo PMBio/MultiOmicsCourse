@@ -1,6 +1,7 @@
 name: ml
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - python=3.8
   - leidenalg
@@ -10,5 +11,6 @@ dependencies:
   - scikit-learn
   - ipykernel
   - umap-learn
-  - tsne
+  - pip:
+    - tsne
 
