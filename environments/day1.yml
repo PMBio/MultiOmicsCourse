@@ -15,9 +15,11 @@ dependencies:
   - scanpy
   - celltypist
   - scvi-tools
-  - scarches
   - bbknn
   - pandas
   - scvelo
   - muon
-  - mofax
+  - pip
+  - pip:
+    - mofax
+    - scarches
