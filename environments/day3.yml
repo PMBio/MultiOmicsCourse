@@ -1,15 +1,20 @@
-name: mocourse
+name: sc_course_day3
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
-  - pyro-ppl
-  - ipywidgets
-  - scanpy
-  - scikit-learn
-  - seaborn
-  - pytorch
-  - matplotlib
-  - numpy
   - jupyterlab
+  - pytorch
   - pandas
+  - numpy
+  - scikit-learn
+  - muon
+  - pip
+  - ipywidgets
+  - seaborn
+  - matplotlib
+  - scanpy
+  - pyro-ppl
+  - pip:
+    - mofax
+    - mofapy2
