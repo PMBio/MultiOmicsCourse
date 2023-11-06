@@ -28,6 +28,7 @@ dependencies:
     - anndata
     - mofapy2
     - scanpy
+    - jupyter-black
     - git+https://github.com/PMBio/SpatialDE
     - git+https://github.com/bioFAM/mofax
     - git+https://github.com/matplotlib/napari-matplotlib
