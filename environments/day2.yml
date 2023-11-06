@@ -4,13 +4,12 @@ channels:
   - conda-forge
 dependencies:
   - python=3.8
-  - leidenalg
-  - scanpy
-  - python-igraph
-  - pandas
-  - scikit-learn
-  - ipykernel
-  - umap-learn
   - pip:
     - tsne
-
+    - leidenalg
+    - scanpy
+    - python-igraph
+    - pandas
+    - scikit-learn
+    - ipykernel
+    - umap-learn
