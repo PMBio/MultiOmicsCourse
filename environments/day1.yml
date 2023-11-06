@@ -4,22 +4,24 @@ channels:
   - default
   - bioconda
 dependencies:
-  - ipywidgets
-  - seaborn
-  - scanpy
-  - pytorch
-  - matplotlib
-  - numpy
-  - scikit-learn
-  - jupyterlab
-  - scanpy
-  - celltypist
-  - scvi-tools
-  - bbknn
-  - pandas
-  - scvelo
-  - muon
+  - python=3.10 
   - pip
   - pip:
     - mofax
+    - ipywidgets
+    - seaborn
+    - scanpy
+    - matplotlib
+    - numpy
+    - scikit-learn
+    - jupyterlab
+    - scanpy
+    - celltypist
+    - scvi-tools
+    - bbknn
+    - pandas
+    - scvelo
+    - muon
     - scarches
+    - chardet
+
