@@ -1,0 +1,38 @@
+name: day4-YML
+channels:
+  - conda-forge
+  - default
+  - bioconda
+  - anaconda
+dependencies:
+  - python=3.9
+  - hdf5
+  - c-blosc2
+  - napari
+  - pyqt
+  - lzo
+  - blosc
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyter
+  - pip
+  - pip:
+    - cython==0.29.14
+    - mofax
+    - scarches
+    - muon
+    - cell2location
+    - anndata
+    - mofapy2
+    - scanpy
+    - jupyter-black
+    - git+https://github.com/PMBio/SpatialDE
+    - git+https://github.com/bioFAM/mofax
+    - git+https://github.com/matplotlib/napari-matplotlib
+    - git+https://github.com/scverse/spatialdata
+    - git+https://github.com/scverse/spatialdata-io
+    - git+https://github.com/scverse/spatialdata-plot
+    - git+https://github.com/scverse/napari-spatialdata@spatialdata
